@@ -105,7 +105,7 @@ function MusicPlayer() {
         </div>
 
         {/* MAIN CONTENT (PLAYLIST) */}
-        <main className="flex-1 overflow-y-auto bg-gradient-to-b from-indigo-900 via-[#121212] to-[#121212] p-4 sm:p-6">
+       <main className="flex-1 overflow-y-auto bg-gradient-to-b from-indigo-900 via-[#121212] to-[#121212] p-4 sm:p-6 pb-32">
           {activePage === "home" && (
             <HomePage
               tracks={tracks}
@@ -120,8 +120,9 @@ function MusicPlayer() {
         </main>
       </div>
 
-      {/* BOTTOM PLAYER (FULL WIDTH) */}
-      <div className="bg-[#181818] p-4 flex flex-col sm:flex-row items-center sm:justify-between gap-4 border-t border-gray-800 flex-shrink-0">
+      {/* BOTTOM PLAYER */}
+      <div className="fixed bottom-0 left-0 w-full bg-[#181818] p-4 flex flex-col sm:flex-row items-center sm:justify-between gap-4 border-t border-gray-800 z-50">
+
         {/* Now Playing Info */}
         <div className="flex items-center gap-4 w-full sm:w-1/4 justify-center sm:justify-start">
           <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center text-xs font-bold">
